@@ -1,0 +1,8 @@
+venv
+build.sh
+*.opml
+*.pdf
+*.xlsx
+copy.sh
+opml2md.py
+8086-asm-learning-code
