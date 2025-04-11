@@ -2,10 +2,13 @@
 ## 命题公式
 * 只有p才q；后推逻辑： q->p
 * 可满足式|矛盾式
-* 重言式属于可满足式
+  * 重言式属于可满足式
 
+* 如P，Q $P \rightarrow Q$
+* P, 除非Q: $P \rightarrow \neg Q$
+* 仅/只有 P，Q: $ Q\rightarrow P$ 后推
 ## 集合
-* $A - B = A \cap ~B$
+* $A - B = A \cap \complement B$
 ## 关系
 * 等价：等价关系中两个元素有关系,符号 `~`
 * 可比：偏序集上两个元素有关系,符号 `<`
@@ -25,10 +28,10 @@
 * 群：封闭的、可结合的，存在单位元，且每个元素都有逆元
 * 阿贝尔群：二元运算是可交换的
 ## 格
-* 格：偏序集、任意两个元素有最小上界和最大上界；满足交换律、结合律、幂等律格吸收率
+* 格：偏序集、任意两个元素有最小上界和最大上界（上下确界）；满足交换律、结合律、幂等律格吸收率
 * 有界格：存在全上界和全下界
 * 有补格：有界格、每个元素都存在补元
-* 分配格 格、满足分配率（钻石格和五角格不是分配格的同构）
+* 分配格： 格的运算满足分配率（钻石格和五角格不是分配格的同构）
 * 布尔代数：有补格、分配格
 
 * 等价关系：自反的、对称的和传递
@@ -72,3 +75,25 @@
 
 ## 二叉树
 完全二叉树有n个节点，则 有(n+1)/2个叶节点
+
+
+
+## 8个概念
+设 $<A,\preccurlyeq>$ 为偏序集，$B \subseteq A, y \in B$
+
+* 若$\forall x(x\in B \rightarrow y \preccurlyeq x)$成立，则称 y 为 B 的最小元
+* 若$\forall x(x\in B \rightarrow x \preccurlyeq y)$成立，则称 y 为 B 的最大元
+* 若$\neg \exists x(x\in B \land x \preccurlyeq y)$成立，则称 y 为 B 的极小元
+* 若$\neg \exists x(x\in B \land y \preccurlyeq x)$成立，则称 y 为 B 的极大元
+
+!!! note 
+    这四个特殊元素都是在 ==子集B== 的范围内规定的
+
+设 $<A,\preccurlyeq>$ 为偏序集，$B \subseteq A, y \in A$
+
+* 若$\forall x(x\in B \rightarrow x \preccurlyeq y)$成立，则称 y 为 B 的上界
+* 若$\forall x(x\in B \rightarrow y \preccurlyeq x)$成立，则称 y 为 B 的下界
+* 令 C={ y | y为B的上界 }，则称C的最小元为 B 的最小上界、上确界
+* 令 D={ y | y为B的下界 }，则称C的最小元为 B 的最大上界、下确界
+
+![alt text](img/cd7ba8e34e2a8a95fb1b80072ef91cf3f7e10ab1.jpg)
